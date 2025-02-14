@@ -24,7 +24,8 @@ public class ClientDTO {
 
     private Integer children;
 
-    public ClientDTO() {}
+    public ClientDTO() {
+    }
 
     public ClientDTO(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
         this.id = id;
@@ -35,7 +36,7 @@ public class ClientDTO {
         this.children = children;
     }
 
-    public ClientDTO(Client entity){
+    public ClientDTO(Client entity) {
         id = entity.getId();
         name = entity.getName();
         cpf = entity.getCpf();
